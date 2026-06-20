@@ -3,849 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حسن ونورة - قصة حب من قلب العراق</title>
+    <title>مملكة حسوناتتت وسراوييي 🌸✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
-
-        * {
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #fff5f7;
+            color: #4a4a4a;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #8B0000;
-            --gold: #D4A574;
-            --dark: #1a1a1a;
-            --light: #FFF8F0;
-            --accent: #2C3E50;
-            --rose: #B76E79;
-            --mosul-blue: #1E3A5F;
-            --samawah-gold: #C8963E;
-            --heart: #E74C3C;
-            --bg-pattern: #fdf6f0;
-            --card: #ffffff;
-            --shadow: 0 10px 40px rgba(0,0,0,0.08);
-            --text: #2c2c2c;
-            --text-light: #666;
-        }
-
-        body {
-            font-family: 'Cairo', sans-serif;
-            background: #faf5ef;
-            background-image: 
-                radial-gradient(circle at 20% 20%, rgba(212, 167, 116, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(184, 110, 121, 0.05) 0%, transparent 50%);
-            color: var(--text);
-            line-height: 1.9;
+            line-height: 1.8;
             overflow-x: hidden;
         }
-
-        /* ============ LOADING SCREEN ============ */
-        #loading-screen {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: var(--dark);
-            z-index: 9999;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.8s ease, visibility 0.8s ease;
-        }
-        #loading-screen.hidden { opacity: 0; visibility: hidden; }
-        .loading-heart {
-            font-size: 60px;
-            animation: heartBeat 0.8s ease-in-out infinite;
-        }
-        @keyframes heartBeat {
-            0%, 100% { transform: scale(1); }
-            25% { transform: scale(1.25); }
-            50% { transform: scale(1.1); }
-        }
-        .loading-text {
-            color: var(--gold);
-            font-family: 'Amiri', serif;
-            font-size: 1.4rem;
-            margin-top: 20px;
-            letter-spacing: 2px;
-        }
-        .loading-subtitle {
-            color: #888;
-            font-size: 0.85rem;
-            margin-top: 8px;
-        }
-
-        /* ============ FLOATING HEARTS ============ */
-        .hearts-container {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            pointer-events: none;
-            z-index: 0;
-        }
-        .floating-heart {
-            position: absolute;
-            font-size: 20px;
-            animation: floatUp 7s linear infinite;
-            opacity: 0.5;
-        }
-        @keyframes floatUp {
-            0% { transform: translateY(105vh) rotate(0deg) scale(0); opacity: 0; }
-            10% { opacity: 0.6; }
-            50% { opacity: 0.4; }
-            90% { opacity: 0.1; }
-            100% { transform: translateY(-10vh) rotate(360deg) scale(1.2); opacity: 0; }
-        }
-
-        /* ============ NAVIGATION ============ */
-        nav {
-            position: fixed;
-            top: 0; width: 100%;
-            background: rgba(26, 26, 26, 0.92);
-            backdrop-filter: blur(20px);
-            z-index: 1000;
-            padding: 12px 0;
-            border-bottom: 1px solid rgba(212, 167, 116, 0.3);
-        }
-        nav .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 25px;
-        }
-        nav .brand {
-            font-family: 'Amiri', serif;
-            font-size: 1.6rem;
-            color: var(--gold);
-            font-weight: 700;
-        }
-        nav .brand span { color: var(--rose); }
-        nav ul { display: flex; list-style: none; gap: 25px; flex-wrap: wrap; }
-        nav ul li a {
-            color: #ccc;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: all 0.3s;
-            position: relative;
-            padding-bottom: 4px;
-        }
-        nav ul li a:hover { color: var(--gold); }
-        nav ul li a::after {
-            content: ''; position: absolute; bottom: 0; left: 0;
-            width: 0; height: 1.5px; background: var(--gold);
-            transition: width 0.3s;
-        }
-        nav ul li a:hover::after { width: 100%; }
-        .nav-toggle { display: none; background: none; border: none; color: #fff; font-size: 1.8rem; cursor: pointer; }
-
-        /* ============ HEADER ============ */
         header {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+            color: white;
             text-align: center;
-            position: relative;
-            z-index: 1;
-            padding: 100px 25px 60px;
-            background: linear-gradient(180deg, rgba(26,26,26,0.03) 0%, rgba(26,26,26,0.01) 100%);
+            padding: 5rem 1rem;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
         }
-        .header-content { max-width: 750px; }
-        .header-badge {
-            display: inline-block;
-            background: var(--primary);
-            color: #fff;
-            padding: 8px 24px;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            letter-spacing: 2px;
-            margin-bottom: 30px;
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
-        .header-content h1 {
-            font-family: 'Amiri', serif;
-            font-size: 4rem;
-            font-weight: 900;
-            color: var(--dark);
-            line-height: 1.3;
-            margin-bottom: 12px;
+        header p {
+            font-size: 1.3rem;
+            margin-top: 10px;
+            opacity: 0.9;
         }
-        .header-content h1 .hasan { color: var(--mosul-blue); }
-        .header-content h1 .and { color: var(--rose); font-size: 2.8rem; margin: 0 8px; }
-        .header-content h1 .noora { color: var(--samawah-gold); }
-        .header-content .subtitle {
-            font-family: 'Amiri', serif;
-            font-size: 1.4rem;
-            color: var(--text-light);
-            font-style: italic;
-            margin-bottom: 25px;
+        .container {
+            max-width: 850px;
+            margin: -2rem auto 3rem auto;
+            padding: 0 1.5rem;
         }
-        .header-content .tagline {
-            font-size: 1.05rem;
-            color: var(--accent);
-            max-width: 500px;
-            margin: 0 auto;
-            line-height: 2;
-        }
-        .header-date {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 12px 28px;
-            border: 1.5px solid var(--gold);
-            border-radius: 50px;
-            color: var(--gold);
-            font-weight: 600;
-            letter-spacing: 1px;
-            transition: all 0.3s;
-            cursor: default;
-        }
-        .header-date:hover { background: var(--gold); color: #fff; }
-
-        /* ============ SECTIONS ============ */
-        section { padding: 70px 25px; position: relative; z-index: 1; }
-        .container { max-width: 950px; margin: 0 auto; }
-        .section-title {
-            text-align: center;
-            font-family: 'Amiri', serif;
-            font-size: 2.4rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 12px;
-            position: relative;
-        }
-        .section-subtitle {
-            text-align: center;
-            color: var(--text-light);
-            margin-bottom: 50px;
-            font-size: 1rem;
-        }
-        .divider {
-            width: 70px; height: 3px;
-            background: var(--gold);
-            margin: 10px auto 20px;
-            border-radius: 5px;
-        }
-
-        /* ============ CARDS ============ */
         .card {
-            background: var(--card);
-            border-radius: 16px;
-            padding: 30px 28px;
-            margin-bottom: 25px;
-            box-shadow: var(--shadow);
-            border: 1px solid rgba(0,0,0,0.04);
-            transition: transform 0.3s, box-shadow 0.3s;
-            position: relative;
-            overflow: hidden;
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border: 1px solid #ffe4e1;
         }
-        .card:hover { transform: translateY(-4px); box-shadow: 0 18px 50px rgba(0,0,0,0.1); }
-        .card::before {
-            content: ''; position: absolute; top: 0; right: 0;
-            width: 4px; height: 100%; background: var(--gold);
-        }
-        .card-title {
-            font-family: 'Amiri', serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 12px;
-        }
-        .card-text { color: var(--text); font-size: 1rem; line-height: 2; }
-        .card-meta {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-top: 15px;
-            font-size: 0.85rem;
-            color: var(--text-light);
-        }
-        .card-meta span { display: flex; align-items: center; gap: 5px; }
-        .highlight {
-            background: linear-gradient(180deg, transparent 60%, rgba(212,167,116,0.25) 60%);
-            padding: 0 4px;
-        }
-
-        /* ============ PROFILE CARDS ============ */
-        .profile-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-        }
-        .profile-card {
-            background: var(--card);
-            border-radius: 16px;
-            padding: 35px 28px;
-            box-shadow: var(--shadow);
-            text-align: center;
-            border: 1px solid rgba(0,0,0,0.04);
-            transition: all 0.3s;
-        }
-        .profile-card:hover { transform: translateY(-5px); box-shadow: 0 20px 55px rgba(0,0,0,0.12); }
-        .profile-card.hasan { border-top: 4px solid var(--mosul-blue); }
-        .profile-card.noora { border-top: 4px solid var(--samawah-gold); }
-        .profile-avatar {
-            width: 90px; height: 90px;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.6rem;
-            color: #fff;
-            font-weight: 900;
-        }
-        .profile-card.hasan .profile-avatar { background: var(--mosul-blue); }
-        .profile-card.noora .profile-avatar { background: var(--samawah-gold); }
-        .profile-name {
-            font-family: 'Amiri', serif;
+        h2 {
+            color: #ff69b4;
             font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 6px;
+            margin-top: 0;
+            border-bottom: 2px dashed #ffe4e1;
+            padding-bottom: 0.5rem;
         }
-        .profile-card.hasan .profile-name { color: var(--mosul-blue); }
-        .profile-card.noora .profile-name { color: var(--samawah-gold); }
-        .profile-location {
-            font-size: 0.9rem;
-            color: var(--text-light);
-            margin-bottom: 15px;
+        .highlight {
+            color: #d11a2a;
+            font-weight: bold;
         }
-        .profile-tags {
+        .quote-box {
+            background-color: #fff0f5;
+            border-right: 5px solid #ff69b4;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            font-style: italic;
+        }
+        .story-block {
+            background: #fafafa;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            border: 1px solid #f0f0f0;
+        }
+        .story-title {
+            color: #ff1493;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        /* معرض الصور الوهمي المستفز */
+        .photo-gallery {
             display: flex;
+            justify-content: space-around;
             flex-wrap: wrap;
-            gap: 8px;
-            justify-content: center;
-            margin-top: 12px;
+            margin-top: 15px;
         }
-        .profile-tag {
-            background: #f5f0e8;
-            color: var(--accent);
-            padding: 5px 14px;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        /* ============ TIMELINE ============ */
-        .timeline {
-            position: relative;
-            padding-right: 35px;
-        }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            right: 12px; top: 0; bottom: 0;
-            width: 2px;
-            background: linear-gradient(to bottom, var(--mosul-blue), var(--rose), var(--samawah-gold));
-            border-radius: 2px;
-        }
-        .timeline-item {
-            position: relative;
-            margin-bottom: 32px;
-            padding-right: 40px;
-        }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            right: 2px; top: 8px;
-            width: 20px; height: 20px;
-            border-radius: 50%;
-            background: var(--card);
-            border: 3px solid var(--gold);
-            z-index: 2;
-        }
-        .timeline-date {
-            font-size: 0.8rem;
-            color: var(--gold);
-            font-weight: 700;
-            letter-spacing: 1px;
-            margin-bottom: 6px;
-        }
-        .timeline-content {
-            background: var(--card);
-            border-radius: 12px;
-            padding: 18px 20px;
-            box-shadow: 0 4px 18px rgba(0,0,0,0.05);
-            border: 1px solid rgba(0,0,0,0.04);
-        }
-        .timeline-content h4 {
-            font-family: 'Amiri', serif;
-            font-size: 1.2rem;
-            color: var(--primary);
-            margin-bottom: 5px;
-        }
-        .timeline-content p { font-size: 0.9rem; color: var(--text-light); line-height: 1.8; }
-
-        /* ============ CHAT BUBBLES ============ */
-        .chat-container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .chat-bubble {
-            margin-bottom: 16px;
+        .photo-slot {
+            width: 100px;
+            height: 100px;
+            background-color: #ffe4e1;
+            border: 2px dashed #ff69b4;
+            border-radius: 10px;
             display: flex;
-            flex-direction: column;
-        }
-        .chat-bubble.sent { align-items: flex-end; }
-        .chat-bubble.received { align-items: flex-start; }
-        .chat-bubble .bubble {
-            max-width: 78%;
-            padding: 14px 20px;
-            border-radius: 24px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            position: relative;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .chat-bubble.sent .bubble {
-            background: var(--mosul-blue);
-            color: #fff;
-            border-bottom-left-radius: 8px;
-        }
-        .chat-bubble.received .bubble {
-            background: #fff;
-            color: var(--text);
-            border: 1.5px solid #f0e8d8;
-            border-bottom-right-radius: 8px;
-        }
-        .chat-bubble .time {
-            font-size: 0.7rem;
-            color: var(--text-light);
-            margin-top: 4px;
-            padding: 0 8px;
-        }
-        .chat-day-divider {
-            text-align: center;
-            margin: 28px 0;
+            align-items: center;
+            justify-content: center;
             font-size: 0.8rem;
-            color: var(--text-light);
-            position: relative;
+            color: #ff69b4;
+            margin: 5px;
         }
-        .chat-day-divider::before {
-            content: '';
-            position: absolute;
-            top: 50%; left: 0; right: 0;
-            height: 1px;
-            background: #e8ddd0;
-            z-index: -1;
-        }
-        .chat-day-divider span {
-            background: #faf5ef;
-            padding: 0 16px;
-        }
-
-        /* ============ ILLNESS SECTION ============ */
-        .care-card {
-            background: linear-gradient(135deg, #fffdf8, #fff5f5);
-            border: 1.5px solid var(--rose);
-            border-radius: 16px;
-            padding: 30px;
+        /* صندوق المفاجأة السري */
+        .secret-box {
+            background: #fff0f5;
+            border: 2px solid #ff69b4;
             text-align: center;
         }
-        .care-card .care-icon { font-size: 3rem; margin-bottom: 12px; }
-        .care-card h4 { color: var(--rose); font-family: 'Amiri', serif; font-size: 1.4rem; }
-        .care-card p { color: var(--text-light); line-height: 2; margin-top: 8px; }
-
-        /* ============ FOOTER ============ */
+        .secret-input {
+            width: 80%;
+            padding: 10px;
+            font-size: 1.1rem;
+            border: 2px solid #ffb6c1;
+            border-radius: 10px;
+            text-align: center;
+            outline: none;
+            font-family: 'Tajawal', sans-serif;
+        }
+        .secret-btn {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 1.1rem;
+            border-radius: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-family: 'Tajawal', sans-serif;
+        }
+        .secret-btn:hover {
+            background-color: #ff1493;
+        }
+        .hidden-content {
+            display: none;
+            animation: fadeIn 1s ease-in-out forwards;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 15px;
+            border-left: 5px solid #ff1493;
+            margin-top: 20px;
+            text-align: right;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .error-msg {
+            color: red;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            display: none;
+        }
         footer {
-            background: var(--dark);
-            color: #aaa;
             text-align: center;
-            padding: 40px 25px;
+            padding: 2rem;
+            color: #aaa;
             font-size: 0.85rem;
-            line-height: 2;
-            border-top: 2px solid var(--gold);
-        }
-        footer .footer-heart { color: var(--heart); font-size: 1.2rem; animation: heartBeat 1.2s ease-in-out infinite; display: inline-block; }
-        footer .footer-names { color: var(--gold); font-family: 'Amiri', serif; font-size: 1.2rem; }
-
-        /* ============ RESPONSIVE ============ */
-        @media (max-width: 768px) {
-            nav ul { display: none; flex-direction: column; width: 100%; background: rgba(26,26,26,0.98); padding: 20px; gap: 15px; }
-            nav ul.open { display: flex; }
-            .nav-toggle { display: block; }
-            nav .container { flex-wrap: wrap; }
-            .header-content h1 { font-size: 2.5rem; }
-            .header-content h1 .and { font-size: 1.8rem; }
-            .profile-grid { grid-template-columns: 1fr; }
-            .timeline { padding-right: 20px; }
-            .section-title { font-size: 1.8rem; }
-            .chat-bubble .bubble { max-width: 88%; }
         }
     </style>
 </head>
 <body>
 
-<!-- ============ LOADING ============ -->
-<div id="loading-screen">
-    <div class="loading-heart">❤️</div>
-    <div class="loading-text">حسن ونورة</div>
-    <div class="loading-subtitle">قصة حب من قلب العراق</div>
-</div>
+    <header>
+        <h1>جمهورية حسوناتتت & سراوييي 🚩✨</h1>
+        <p>معجزة الـ 4 أيام التي ألغت مسافات العراق بالكامل</p>
+    </header>
 
-<!-- ============ FLOATING HEARTS ============ -->
-<div class="hearts-container" id="heartsContainer"></div>
-
-<!-- ============ NAVIGATION ============ -->
-<nav>
     <div class="container">
-        <div class="brand">حسن <span>&</span> نورة</div>
-        <button class="nav-toggle" id="navToggle">☰</button>
-        <ul id="navMenu">
-            <li><a href="#home">البداية</a></li>
-            <li><a href="#about">من نحن</a></li>
-            <li><a href="#story">قصتنا</a></li>
-            <li><a href="#chats">محادثاتنا</a></li>
-            <li><a href="#moments">لحظات خاصة</a></li>
-            <li><a href="#future">المستقبل</a></li>
-        </ul>
-    </div>
-</nav>
-
-<!-- ============ HEADER ============ -->
-<header id="home">
-    <div class="header-content">
-        <div class="header-badge">✨ قصة حب عراقية ✨</div>
-        <h1>
-            <span class="hasan">حسن</span>
-            <span class="and">&</span>
-            <span class="noora">نورة</span>
-        </h1>
-        <p class="subtitle">"من الموصل إلى السماوة، جمعتنا الشاشات وفرقتنا المسافات، لكن القلب واحد."</p>
-        <p class="tagline">
-            قصة حب بدأت في كروب تليجرام صغير، وتحولت إلى عالم كامل من المشاعر.
-            بين طالب سادس علمي يحلم بتركيا، وفتاة ناجحة تعاني بصمت.
-            هذه حكايتنا.
-        </p>
-        <div class="header-date">📅 منذ أن التقينا — وإلى الأبد</div>
-    </div>
-</header>
-
-<!-- ============ ABOUT ============ -->
-<section id="about">
-    <div class="container">
-        <h2 class="section-title">من نحن</h2>
-        <div class="divider"></div>
-        <p class="section-subtitle">نفسان التقيا رغم بعد المسافات</p>
-        <div class="profile-grid">
-            <!-- حسن -->
-            <div class="profile-card hasan">
-                <div class="profile-avatar">ح</div>
-                <h3 class="profile-name">حسن</h3>
-                <p class="profile-location">📍 الموصل، العراق</p>
-                <p style="color:var(--text-light);line-height:2;margin-bottom:8px;">
-                    عمري 19 سنة، طالب سادس علمي. أعشق السفر إلى تركيا وأحلم أعيش فيها.
-                    عندي شغف كبير بالتقنيات والبرمجة والأمن السيبراني.
-                    أحب كرة القدم لدرجة إني تعاركت مع عمي بسببها!
-                </p>
-                <div class="profile-tags">
-                    <span class="profile-tag">🛡️ أمن سيبراني</span>
-                    <span class="profile-tag">💻 برمجة</span>
-                    <span class="profile-tag">✈️ تركيا</span>
-                    <span class="profile-tag">⚽ كرة قدم</span>
-                    <span class="profile-tag">📚 سادس علمي</span>
-                </div>
-            </div>
-            <!-- نورة -->
-            <div class="profile-card noora">
-                <div class="profile-avatar">ن</div>
-                <h3 class="profile-name">نورة</h3>
-                <p class="profile-location">📍 السماوة، العراق</p>
-                <p style="color:var(--text-light);line-height:2;margin-bottom:8px;">
-                    عمري 18 سنة حديثاً، نجحت إعفاء عام من الخامس إلى السادس علمي.
-                    أعاني من الأنيميا والصداع القوي، لكني قوية وأحب العمل والاجتهاد.
-                    يحبون يطقطقون على صوتي ويقولون يشبه صوت الولد، وأنا أضحك معاهم.
-                </p>
-                <div class="profile-tags">
-                    <span class="profile-tag">🩺 أنيميا</span>
-                    <span class="profile-tag">🎓 إعفاء عام</span>
-                    <span class="profile-tag">💼 تحب العمل</span>
-                    <span class="profile-tag">🗣️ صوت مميز</span>
-                    <span class="profile-tag">📖 طالبة</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============ STORY TIMELINE ============ -->
-<section id="story" style="background:#fffdf9;">
-    <div class="container">
-        <h2 class="section-title">قصتنا</h2>
-        <div class="divider"></div>
-        <p class="section-subtitle">كيف بدأ كل شيء وكيف صرنا هنا</p>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">🟡 البداية</div>
-                <div class="timeline-content">
-                    <h4>كروب تليجرام يجمعنا</h4>
-                    <p>تعرفنا على بعض في كروب تليجرام. كنا نتناقش ونتكلم، وصرنا نشتغل مع بعض. شيئاً فشيئاً، صار بيننا كلام خاص بعيداً عن الكروب.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">🔴 منعطف خطير</div>
-                <div class="timeline-content">
-                    <h4>حظرتني أكثر من مرة!</h4>
-                    <p>نورة حظرتني أكثر من مرة بسبب سوء تفاهم. قالت لي بعدين: "كنت أحظرك لأني أحبك وما أعرف شلون أتعامل." واليوم تضحك وتقول: "والله ما راح أحظرك بعد."</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">💚 الآن</div>
-                <div class="timeline-content">
-                    <h4>حبيبين — على قولها</h4>
-                    <p>اليوم نحن حبيبين. هي تقولها بكل فخر: "حسن حبيبي." وأنا أقولها: "نورة حياتي." رغم المسافة بين الموصل والسماوة، قلوبنا قريبة.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">🎉 قريباً</div>
-                <div class="timeline-content">
-                    <h4>عرس أخي في البيت</h4>
-                    <p>قريباً عندنا عرس أخي في البيت. البيت كله فرح واستعدادات. ونورة متحمسة تسمع كل التفاصيل أول بأول.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============ CHATS ============ -->
-<section id="chats">
-    <div class="container">
-        <h2 class="section-title">محادثاتنا</h2>
-        <div class="divider"></div>
-        <p class="section-subtitle">بعض من كلامنا الخاص — هكذا نحب وهكذا نمزح</p>
-        <div class="chat-container">
-            <div class="chat-day-divider"><span>📅 يوم عادي — مساءً</span></div>
-            <div class="chat-bubble sent">
-                <div class="bubble">شلونج اليوم يا عمري؟ الصداع أخف شوي؟</div>
-                <div class="time">9:15 مساءً ✓✓</div>
-            </div>
-            <div class="chat-bubble received">
-                <div class="bubble">للأسف لا والله، الصداع مخليني ما أشوف القدامي. بس صوتك يخفف الألم شوية 😢</div>
-                <div class="time">9:17 مساءً</div>
-            </div>
-            <div class="chat-bubble sent">
-                <div class="bubble">يا روحي، تعرفين إني دا أحلم أسافر بيكِ لتركيا. هناك في مستشفيات يعتنون بالأنيميا. تصوري نفسك في إسطنبول جنبي.</div>
-                <div class="time">9:20 مساءً ✓✓</div>
-            </div>
-            <div class="chat-bubble received">
-                <div class="bubble">أحلم بهذا اليوم والله. أنا وأنت في تركيا، أمشي معاك على البحر. بس قبل لا تسافرني، لازم أنجح بالسادس 🤓</div>
-                <div class="time">9:23 مساءً</div>
-            </div>
-            <div class="chat-day-divider"><span>📅 يوم آخر — فجراً</span></div>
-            <div class="chat-bubble sent">
-                <div class="bubble">هههههههه، اليوم سمعت رسالة صوتج القديمة، والله صوتج يشبه صوت الولد. أموت على هالصوت 😂❤️</div>
-                <div class="time">2:40 صباحاً ✓✓</div>
-            </div>
-            <div class="chat-bubble received">
-                <div class="bubble">أقول لك لا تطقطق على صوتي! والله لأحظرك مثل قبل 😤😂</div>
-                <div class="time">2:42 صباحاً</div>
-            </div>
-            <div class="chat-bubble sent">
-                <div class="bubble">لا تحظريني ترى تعاركت مع عمي عشان كرة قدم، ما بقى لي طاقة للمشاكل 😂</div>
-                <div class="time">2:43 صباحاً ✓✓</div>
-            </div>
-            <div class="chat-bubble received">
-                <div class="bubble">يا ابني تعاركت مع عمك عشان كرة؟ 😂 أنت مجنون رسمياً. أحبك رغم جنونك.</div>
-                <div class="time">2:45 صباحاً</div>
-            </div>
-            <div class="chat-day-divider"><span>📅 قبل أيام — حول العرس</span></div>
-            <div class="chat-bubble sent">
-                <div class="bubble">تعالي البارحة البيت كله مقلوب استعداداً لعرس أخي. يا ريت تكونين هنا تشوفين الدبكة.</div>
-                <div class="time">8:00 مساءً ✓✓</div>
-            </div>
-            <div class="chat-bubble received">
-                <div class="bubble">يا حظكم! حتماً العرس يكون جنة. متى دورنا؟ 🤭</div>
-                <div class="time">8:03 مساءً</div>
-            </div>
-            <div class="chat-bubble sent">
-                <div class="bubble">دورنا قريب إن شاء الله. أول ما أتخرج وأحصل شغل في الأمن السيبراني، أول شيء أسويه أخطبج ❤️</div>
-                <div class="time">8:06 مساءً ✓✓</div>
-            </div>
-            <div class="chat-bubble received">
-                <div class="bubble">أدري إنك راح تحقق حلمك. وأنا معاك خطوة بخطوة. حتى لو كنت مريضة، حبك يداويني 🤍</div>
-                <div class="time">8:09 مساءً</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============ SPECIAL MOMENTS ============ -->
-<section id="moments" style="background:#fffdf9;">
-    <div class="container">
-        <h2 class="section-title">لحظات خاصة</h2>
-        <div class="divider"></div>
-        <p class="section-subtitle">تفاصيل صغيرة لكنها تعني كل شيء</p>
+        
+        <!-- القسم الأول: تفاصيل الصداقة السريعة والمضحكة -->
         <div class="card">
-            <h3 class="card-title">⚽ شجار حسن مع عمّه</h3>
-            <p class="card-text">
-                في يوم من الأيام، وأثناء مباراة كرة قدم، احتدم النقاش بين حسن وعمّه حول قرار تحكيمي.
-                حسن، المعروف بحبه الشديد للكرة، دخل في نقاش حاد وصل إلى <span class="highlight">عراك كلامي قوي</span>.
-                نورة لما سمعت الحكاية ضحكت وقالت: "أنت مجنون فعلاً، بس أحبك."
-            </p>
-            <div class="card-meta">
-                <span>⚽ كرة قدم</span><span>👨‍👦 عائلة</span><span>😂 ضحك</span>
+            <h2>الملف السري لـ "أسرع علاقة بالكون" ⚡</h2>
+            <p>من يصدك إنو <span class="highlight">4 أيام بس</span> كافية تخلي ابن الموصل وبنت السماوة يصيرون قطعة وحدة؟ سرعة الارتباط والراحة بيناتنا تجاوزت كل القوانين العلمية والفيزيائية! احنا ما ندرس سوية، كل واحد يدرس بكيفه وعلى واهسه، بس نلتقي بالرسائل حتى نسولف ونفتح مواضيع ونشارك تفاصيل يومنا.</p>
+            
+            <div class="quote-box">
+                "هو يصيح لها: <span class="highlight">سراوييي</span> وهي تصيح له: <span class="highlight">حسوناتتت</span>.. ومن يقرر يقلب الموازين ويقول (إسراء)، يجي الرد السريع والظريف والمفروض عليها بقوة القانون: <span class="highlight">عيوني</span> غصباً عليها هههههههه!"
             </div>
+
+            <p>أكثر شي يترس يومنا ضحك وفرح هو <strong>الأخطاء الإملائية</strong> الكارثية مالت حسوناتتت اللي تسويها سراوييي قضية رأي عام، وصوتها الناعم الهادئ القليل اللي يبينها طفلة بعمر 12 سنة رغم إنها مهندسة جبيرة ومواليدها <span class="highlight">23/10/2006</span>، وطبعاً عركاتنا اليومية العفوية على أبسط الشغلات.</p>
         </div>
+
+        <!-- القسم الثاني: أزمة الصور الأربعة -->
         <div class="card">
-            <h3 class="card-title">🎓 نجاح نورة — إعفاء عام</h3>
-            <p class="card-text">
-                نورة نجحت إعفاء عام من الخامس إلى السادس علمي. فرحتها كانت كبيرة جداً،
-                وحسن كان أول شخص يبارك لها. قالت له: <span class="highlight">"لولا دعمك ما كنت لأقدر."</span>
-                رغم مرضها وتعبها، أثبتت للجميع أنها قوية وتستطيع.
-            </p>
-            <div class="card-meta">
-                <span>🎓 نجاح</span><span>💪 قوة</span><span>🤍 دعم</span>
+            <h2>متحف الصور الشحيحة 🖼️🕵️‍♂️</h2>
+            <p>حسن يحب التقنية والشغل والترتيب، بس واقف عاجز قدام أكبر لغز: <strong>"أنا شايف بس 4 صور بس!"</strong>. نعم يا جماعة، أربع صور فقط هي كل الرصيد الحالي! لهذا السبب، صممنا حقول مخصصة بالأسفل بانتظار التحديثات المستقبلية لعل وعسى سراوييي تحن علينا وتدز صور جديدة تليق بالموقع!</p>
+            <div class="photo-gallery">
+                <div class="photo-slot">صورة 1 ✅</div>
+                <div class="photo-slot">صورة 2 ✅</div>
+                <div class="photo-slot">صورة 3 ✅</div>
+                <div class="photo-slot">صورة 4 ✅</div>
+                <div class="photo-slot" style="background-color: #fff; border-style: dotted; color: #aaa;">قريباً.. 👀</div>
             </div>
         </div>
+
+        <!-- القسم الثالث: جبهة السادس والتأجيلات التكتيكية -->
         <div class="card">
-            <h3 class="card-title">🩺 صراع نورة مع المرض</h3>
-            <p class="card-text">
-                نورة تعاني من الأنيميا، وفي الفترة الأخيرة الصداع أصبح قوياً جداً ولا يفارقها.
-                حسن يظل يسأل عنها باستمرار ويدعو لها. هي تقول: <span class="highlight">"حبك هو الدواء الوحيد."</span>
-                وهو يقول: <span class="highlight">"أتمنى لو أستطيع أخذ ألمك كله."</span>
-            </p>
-            <div class="card-meta">
-                <span>🩺 أنيميا</span><span>💊 صداع</span><span>❤️ حُب</span>
-            </div>
+            <h2>كتيبة السادس والمؤجلات الوزارية 📚🔥</h2>
+            <p>هنا المعركة الحقيقية، الاثنين بمركب السادس العلمي وجاي يقاتلون بآخر السنة. حسن وبكل ثقة تكتيكية قرر يؤجل مادة <span class="highlight">الأحياء</span> فقط، بينما سراوييي المهندسة قررت تأجيل مادة <span class="highlight">الإنجليزي</span> فقط. ورغم إن كل واحد يدرس على طريقته الخاصة وبمزاجه، إلا إن الخوف المتبادل والتشجيع هو الجندي المجهول اللي يخلينا نستمر رغم ضغط المراجعة والتعب.</p>
         </div>
+
+        <!-- القسم الرابع: القصص الخمسة الخيالية الطويلة -->
         <div class="card">
-            <h3 class="card-title">🎉 عرس أخي في البيت</h3>
-            <p class="card-text">
-                البيت كله فرح واستعدادات لعرس أخ حسن. الزينة معلقة، والأغاني
-                العراقية تملأ المكان. نورة تتابع كل شيء من بعيد وتسأل عن التفاصيل.
-                الاثنان يحلمان بذلك اليوم الذي سيكون فيه العرس <span class="highlight">عرسهما.</span>
-            </p>
-            <div class="card-meta">
-                <span>🎉 عرس</span><span>🏠 بيت</span><span>💭 حلم</span>
+            <h2>كتاب القصص الخيالية الخمسة 📖✨</h2>
+            <p>لأن قصتنا مميزة، تخيلنا 5 سيناريوهات طويلة ومليانة معنى وفرح، مصممة خصيصاً لترسم الضحكة على وجه سراوييي الحلو:</p>
+
+            <!-- القصة الأولى -->
+            <div class="story-block">
+                <div class="story-title">القصة الأولى: الطائرة المتجهة نحو السحاب ✈️🌍</div>
+                <p>يتأجل السادس وتخلص الامتحانات، ونجلس بطائرة وحدة طالعة لتركيا أو أي مكان سياحي بالعالم. حسن مجهز كل الترتيبات التقنية وحاجز أحلى الأماكن، وسراوييي بجانبه بصوتها الناعم تعترض على المقاعد وتضحك على أخطائه الإملائية بكتابة التذاكر. نوصل هناك، ونفتر بين الكوفيات الهادئة، وسراوييي تطلب أكل يكفي عشيرة كاملة بحجة (أنا ضعيفة وعندي كرش وهمي)، وحسن يباوع ومندهش شلون تاكل كل هذا وما تبين عليها الحلاوة والرشاقة!</p>
+            </div>
+
+            <!-- القصة الثانية -->
+            <div class="story-block">
+                <div class="story-title">القصة الثانية: ابن الموصل في ضيافة السماوة 🚊🌴</div>
+                <p>يقرر حسوناتتت يقطع المسافات ويسافر من شمال العراق لجنوبه، ويوصل لمحطة قطار السماوة. هناك بانتظاره المهندسة سراوييي بكامل كشختها، تستقبله بأجمل ترحيب جنوبي دافئ وصوت ناعم يضيع وسط زحمة الناس. تأخذه بفورة سياحية وتفرره بالمحافظات الجنوبية، من شناشيل البصرة إلى أهوار الناصرية والكوفيات المميزة بالسماوة. وبكل كافيه يقعدون بيه، تبدي عركة الأيدي والمخايد التخيلية لأن حسن حچى كلمة موصلاوية وهي ردت بكلمة سماوية، والناس تباوع وتضحك على أحلى أصدقاء.</p>
+            </div>
+
+            <!-- القصة الثالثة -->
+            <div class="story-block">
+                <div class="story-title">القصة الثالثة: آخر صديقين على كوكب الأرض 🪐🚀</div>
+                <p>تخيلوا لو قعدنا الصبح ولقينا الكوكب فارغ تماماً، ماكو بشر، ماكو وزارة تربية، ماكو كتاب أحياء يدوخ حسن، ولا كتاب إنجليزي يزعج إسراء! بقينا بس احنا الاثنين. نختار أحلى وأكبر كافيه بالبلد، حسن يشغل السيرفرات والإنترنت عن طريق التقنية، وإسراء تصمم الديكور الهندسي بلمستها. نقضي يومنا نأكل، ونرسم على شاشات الموبايل، ونتبادل الميزات المضحكة بالانستغرام بدون إزعاج من أي أحد، ونعيش بسلام وأمان بجمهوريتنا الخاصة.</p>
+            </div>
+
+            <!-- القصة الرابعة -->
+            <div class="story-block">
+                <div class="story-title">القصة الرابعة: الحلم المكتوب قبل اللقاء 💤🔮</div>
+                <p>قبل لا نتعارف بـ 4 أيام، حسن نام وشاف حلم غريب: شاف ضحكة صافية وصوت ناعم جداً جاي من بعيد، وشاف لوحة مرسومة ومكتوب عليها "مهندسة المستقبل". لما قعد من النوم ما فهم الحلم، بس ورا ما بدت قصتنا وعرف سراوييي وعنادها وصوتها وكلمة "عيوني"، عرف إن هالحلم چان حقيقة مؤجلة، وإن الـ 4 أيام هذي چانت مكتوبة ومضمومة إلنا من زمان لأن القلوب تشابهت قبل لا تلتقي الرسائل.</p>
+            </div>
+
+            <!-- القصة الخامسة -->
+            <div class="story-block">
+                <div class="story-title">القصة الخامسة: يوم النصر وإعلان التخرج 🎓🎉</div>
+                <p>السيناريو الأجمل والأقرب للواقع: يوم إعلان نتائج السادس الوزاري. حسن يفتح الرابط التقني وعيونه تلمع، يلقى نفسه ناجح ومأكل الجو، وفوراً يتصل بـ سراوييي ويلقاها طايرة من الفرح ومعدلها يأهلها للهندسة رسمياً. نلتقي بذاك اليوم بأحلى كافيه، وإسراء تعترف بكل فخر وتقول لحسوناتتت بصوتها الناعم وعنادها المعتاد: "أحبك بس أكرهك.. وشكراً لأنك جنت أحلى صديق وأقوى سند بهالرحلة".</p>
             </div>
         </div>
+
+        <!-- القسم الخامس: صندوق المفاجأة السري والمحدث -->
+        <div class="card secret-box">
+            <h2>خزنة الذكريات المغلقة 🔐🎁</h2>
+            <p>يا سراوييي، افتحي الخزنة بيوم ميلادج المميّز (رقم اليوم متكون من مرتبتين):</p>
+            
+            <input type="number" id="secretKey" class="secret-input" placeholder="اكتبي الرقم هنا...">
+            <br>
+            <button onclick="checkKey()" class="secret-btn">افتحي الرسالة السرية 🔓</button>
+            <p id="error" class="error-msg">الرقم غلط! ركزي يا باشمهندسة 😉</p>
+
+            <!-- المحتوى المخفي المليان حجي وتفاصيل خاصة ومؤثرة -->
+            <div id="surpriseContent" class="hidden-content">
+                <h3 style="color: #ff1493; margin-top:0; text-align: center;">إلى سراوييي الغالية (أعز وأقوى صديقة) 💌</h3>
+                <p>صممت لج هذا الموقع وجمعت بيه كل تفاصيلنا المضحكة وسوالفنا، من الأخطاء الإملائية لحد عقدة الـ 4 صور والتأجيلات، حتى تعرفين شكد هالأيام القليلة چانت جبيرة وغالية بقلبي.</p>
+                <p>أدري ضغط السادس والوزاري متعبنا، وأدري خوفج عليّ من أجلت الأحياء چان من طيبة قلبج وصداقتج الصدوقة، وبالمقابل أنا همين أدعي لج بكل لحظة تعبرين الإنجليزي وتجيبين المعدل اللي يخليج أحلى مهندسة بالعراق.</p>
+                <p>شكراً على وجودج، وعلى صوتج الناعم اللي يهدئ التعب، وعلى كلمة "عيوني" اللي تطلع غصباً عليج وتفرحني، وعلى ميزات الانستغرام وعركاتنا التخيلية البسيطة.</p>
+                <p>احنا بمركب واحد، وإن شاء الله راح ننجح سوية ونعبر هالمرحلة ونضحك على كل هالأيام. ربي يحفظج ويوفقج يا سراوييي! ✨💪</p>
+            </div>
+        </div>
+
     </div>
-</section>
 
-<!-- ============ HEALTH & CARE ============ -->
-<section id="care">
-    <div class="container">
-        <div class="care-card">
-            <div class="care-icon">🩺💛</div>
-            <h4>نورتي — صحتج تهمني</h4>
-            <p>
-                أعرف إن الأنيميا تتعبج والصداع ما يرحمج.<br>
-                بس أريد تعرفين إني دا أدعي لج كل يوم.<br>
-                وعد مني: أول ما أوصل، راح أعتني فيج مثل ما تستحقين.<br>
-                <strong>قريباً راح تخلص كل أوجاعج، وتركيا تنتظرنا. 🤍</strong>
-            </p>
-        </div>
-    </div>
-</section>
+    <footer>
+        تطوير وتصميم صديقج المخلص: حسوناتتت (حسن قاسم) | مواليد 19/7/2006 💻🌸
+    </footer>
 
-<!-- ============ FUTURE ============ -->
-<section id="future" style="background:#fffdf9;">
-    <div class="container">
-        <h2 class="section-title">أحلامنا القادمة</h2>
-        <div class="divider"></div>
-        <p class="section-subtitle">نرسم المستقبل سوياً بحب وشغف</p>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;" class="profile-grid">
-            <div class="card" style="text-align:center;">
-                <h3 class="card-title">✈️ تركيا</h3>
-                <p class="card-text">نسافر مع بعض لتركيا. نعيش في إسطنبول. نمشي على البحر ونأكل كباب وننسى التعب.</p>
-            </div>
-            <div class="card" style="text-align:center;">
-                <h3 class="card-title">🛡️ الأمن السيبراني</h3>
-                <p class="card-text">أتخرج وأشتغل في الأمن السيبراني. أبني مستقبلنا بيدي، ونورة تفخر بي.</p>
-            </div>
-            <div class="card" style="text-align:center;">
-                <h3 class="card-title">🏠 بيت العمر</h3>
-                <p class="card-text">نملك بيت صغير، نزرع فيه ورد، ونعيش فيه أحلى أيام عمرنا.</p>
-            </div>
-            <div class="card" style="text-align:center;">
-                <h3 class="card-title">💒 عرسنا</h3>
-                <p class="card-text">نقيم عرساً يحضره الأهل والأصدقاء، وتكون فيه الدبكة العراقية أجمل ما يكون.</p>
-            </div>
-        </div>
-        <div style="text-align:center;margin-top:40px;">
-            <p style="font-family:'Amiri',serif;font-size:1.5rem;color:var(--primary);font-style:italic;">
-                ✨ من الموصل إلى السماوة، ثم إلى تركيا، وإلى الأبد. ✨
-            </p>
-        </div>
-    </div>
-</section>
+    <script>
+        function checkKey() {
+            var key = document.getElementById("secretKey").value;
+            var surprise = document.getElementById("surpriseContent");
+            var error = document.getElementById("error");
 
-<!-- ============ FOOTER ============ -->
-<footer>
-    <p style="font-family:'Amiri',serif;font-size:1.4rem;color:var(--gold);">حسن ونورة</p>
-    <p>قصة حب عراقية بدأت بكروب تليجرام ولن تنتهي أبداً.</p>
-    <p>الموصل ❤️ السماوة</p>
-    <p style="margin-top:10px;">كل الحقوق محفوظة لحسن ونورة — <span class="footer-heart">❤️</span> — 2026</p>
-</footer>
-
-<script>
-    // ============ LOADING SCREEN ============
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            document.getElementById('loading-screen').classList.add('hidden');
-        }, 1800);
-    });
-
-    // ============ NAV TOGGLE ============
-    const navToggle = document.getElementById('navToggle');
-    const navMenu = document.getElementById('navMenu');
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('open');
-    });
-
-    // ============ SMOOTH SCROLL ============
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                navMenu.classList.remove('open');
+            if(key === "23") {
+                surprise.style.display = "block";
+                error.style.display = "none";
+                document.getElementById("secretKey").style.display = "none";
+                document.querySelector(".secret-btn").style.display = "none";
+                surprise.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                error.style.display = "block";
+                surprise.style.display = "none";
             }
-        });
-    });
+        }
+    </script>
 
-    // ============ FLOATING HEARTS ============
-    const heartsContainer = document.getElementById('heartsContainer');
-    const heartEmojis = ['❤️', '🩷', '💛', '🤍', '💕', '💗', '💖', '✨', '🌹'];
-
-    function createHeart() {
-        const heart = document.createElement('span');
-        heart.classList.add('floating-heart');
-        heart.textContent = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
-        heart.style.left = Math.random() * 95 + '%';
-        heart.style.fontSize = (Math.random() * 22 + 12) + 'px';
-        heart.style.animationDuration = (Math.random() * 8 + 6) + 's';
-        heart.style.animationDelay = Math.random() * 2 + 's';
-        heartsContainer.appendChild(heart);
-        setTimeout(() => heart.remove(), 10000);
-    }
-
-    setInterval(createHeart, 2200);
-    for (let i = 0; i < 8; i++) {
-        setTimeout(createHeart, i * 400);
-    }
-
-    // ============ INTERSECTION OBSERVER FOR ANIMATIONS ============
-    const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -40px 0px' };
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.card, .profile-card, .timeline-item, .care-card').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(25px)';
-        el.style.transition = 'all 0.7s ease';
-        observer.observe(el);
-    });
-
-    console.log('💛 حسن ونورة — الموقع شغال. قصة حب من الموصل إلى السماوة.');
-</script>
 </body>
 </html>
